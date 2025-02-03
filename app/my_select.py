@@ -97,5 +97,21 @@ def select_10(student_id: int, teacher_id: int):
     )
 
 
+def print_result(result, counter=[1]):
+    print(f"### Query {counter[0]}")
+    print("```")
+    print(result)
+    print("```")
+    counter[0] += 1
+
 if __name__ == "__main__":
-    print(select_1())
+    print_result(select_1())
+    print_result(select_2(1))
+    print_result(select_3(1))
+    print_result(select_4())
+    print_result(select_5(1))
+    print_result(select_6(1))
+    print_result(select_7(1, 1))
+    print_result(select_8(1))
+    print_result(select_9(1))
+    print_result(select_10(1, 1))
